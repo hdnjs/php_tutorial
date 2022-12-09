@@ -2,10 +2,14 @@
 
     session_start();
     // $_SESSION['userid'] = 'swiss';
-    unset($_SESSION['userid']);
+    unset($_SESSION['user']);
 
+    echo    "
+        <script>
+            location.href='/php_lecture/index.php'
+        </script>
+    "
 
 ?>
 
-<p>넘어온 세션: <?=$userid?></p>
 

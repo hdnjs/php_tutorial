@@ -14,15 +14,15 @@
         echo "세션 없음";
     }
 
-    // echo isset($_SESSION['userid']);
+    echo isset($_SESSION['userid']);
 
-    echo $userid;
+    // echo $userid;
 
     
 
 ?>
 
-<p><?=userid?>님, 안녕하세요!</p>
+<p><?=$userid?></p>
 
 <button onclick='goLogout'>go to logout</button>
 
